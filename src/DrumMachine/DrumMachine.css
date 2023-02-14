@@ -1,0 +1,48 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+.drum-pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(45, 47, 49);
+    color: rgba(201, 233, 233, 0.849);
+    border: rgba(201, 233, 233, 0.849) solid 1px;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.drum-pad:active {
+    background-color: rgba(114, 101, 25, 0.699);
+}
+
+.active {
+    background-color: rgba(114, 101, 25, 0.699);
+}
+
+#display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+
+}
+
+#drum-machine {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

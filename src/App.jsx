@@ -1,12 +1,13 @@
-import { React } from 'react'
-import Header from './Header';
 import './App.css'
-
-export default class App extends React.Component{
-  render(){
-    return (
-      <div className='App'>
-        <Header />
-      </div>
-  );}
+import { Header } from './Header/Header'
+import { DrumMachine } from './DrumMachine/DrumMachine'
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <DrumMachine />
+    </div>
+  )
 }
+
+export default App
