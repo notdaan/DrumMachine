@@ -31,7 +31,7 @@
     background-color: rgba(114, 101, 25, 0.699);
 }
 
-#display {
+#drum-machine {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,7 +41,7 @@
 
 }
 
-#drum-machine {
+#drum-machine-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 15px;
