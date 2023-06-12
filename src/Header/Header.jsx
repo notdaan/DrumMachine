@@ -13,6 +13,7 @@ export class Header extends React.Component {
                 </nav>
                 <p id="instructions">Hit the Keys to play the sounds</p>
                 <div className="linebreak"></div>
+                
             </div>
         );
     }

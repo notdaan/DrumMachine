@@ -52,30 +52,35 @@ const AudioClips  = [{
 export class DrumMachine extends React.Component {
     constructor(props){
         super(props)
+        this.childToParent = this.childToParent.bind(this);
         this.state = {
-          pressed: false,
-          Drumpad: "drum-pad",
-          presstoggle: "pressed-"
+            data: "test",
         };
       }
-    PlaySound(sound) {
-        console.log('pressed '+ sound)
-        
-    }
+      childToParent = (childData) => {
+        this.setState({
+            data: childData,
+        })
+      };
     render(){
         return (
-            <div id="drum-machine">
-                <div id="display">
+            <div>
+            <div id="drum-machine-wrapper">
+                <div id="drum-machine">
+                    
                         {
                         AudioClips.map((item, id) => {
                                 return <DrumPad 
                                 key={id}
-                                pad={item}/>
+                                pad={item}
+                                childToParent={this.childToParent}
+                                />
                         })
                         }
                 </div>
             </div>
-            
+            <div id='display'>{this.state.data}</div>
+            </div>
         );
     }
 }

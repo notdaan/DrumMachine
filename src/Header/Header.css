@@ -29,7 +29,12 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-  
+
+#display {
+  font-size: 1.8rem;
+  padding: 3px;
+  margin-bottom: 10px;
+}
 
 
 #nav-logo {
