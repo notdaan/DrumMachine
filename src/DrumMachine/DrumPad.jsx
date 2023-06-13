@@ -11,7 +11,7 @@ export class DrumPad extends React.Component {
         this.KeyPressed = this.KeyPressed.bind(this);
         this.KeyReleased = this.KeyReleased.bind(this);
     }
-    PlaySound = id => () => {
+    PlaySound(id) {
         console.log('pressed')
         const sample = this.handleAudio.current;
         //console.log(sample)
@@ -52,7 +52,7 @@ export class DrumPad extends React.Component {
         const pad = this.props.pad;
         //console.log(pad.Key)
         return (
-        <div className="drum-pad" id={pad.id} onClick={this.PlaySound(pad.id)}>
+        <div className="drum-pad" id={pad.id} onClick={e => this.PlaySound(e.target.id)}>
             <audio className="clip" id={pad.Key} src={pad.url} ref={this.handleAudio} />
             {pad.Key}
         </div>
